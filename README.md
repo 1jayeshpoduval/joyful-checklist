@@ -1,9 +1,6 @@
-# React + Vite
+A dynamic checklist that plays a random animation every time the last item in the checklist is checked. Built with Framer Motion and TailwindCSS. This was inspired by Sam Selikoff's version of the Trello checklist animation.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Randomized Animations: A set of 4 different animations are randomized and triggered whenever the last item in the checklist is checked.
+Smooth Transitions: Powered by Framer Motion for seamless and responsive animations.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-"# joyful-checklist" 

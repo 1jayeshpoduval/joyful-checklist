@@ -7,11 +7,12 @@ export default {
         "mint-green": "rgba(82, 183, 136, 1)",
       },
       width: {
-        "90%": "90%",
+        "[90%]": "90%",
       },
-      minWidth: {
-        "365px": "365px",
+      maxWidth: {
+        "[380px]": "380px",
       },
+
       ringColor: ["focus"],
     },
   },

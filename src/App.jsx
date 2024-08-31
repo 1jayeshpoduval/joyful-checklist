@@ -69,9 +69,9 @@ function App() {
 
   return (
     <>
-      <section className="w-screen h-screen bg-mint-green">
-        <div className="flex flex-col items-center justify-center w-90% max-w-2xl h-full m-auto">
-          <div className="w-6/12 min-w-365px p-6 bg-gray-100 border-4 border-black shadow-hard-l rounded-3xl">
+      <section className="h-screen bg-mint-green">
+        <div className="flex flex-col items-center justify-center w-[90%] max-w-screen-2xl h-full m-auto">
+          <div className="max-w-[380px] p-6 bg-gray-100 border-4 border-black shadow-hard-l rounded-3xl">
             <h1 className="text-3xl font-bold tracking-tighter leading-none">
               A joyful checklist!
             </h1>
@@ -79,15 +79,15 @@ function App() {
               {checklistItems.map((item) => (
                 <label
                   key={item.id}
-                  className={`w-full font-medium select-none transition-colors ${item.checked ? "text-gray-400 line-through" : ""}`}
+                  className={`flex w-full font-medium select-none transition-colors ${item.checked ? "text-gray-400 line-through" : ""}`}
                 >
                   <input
                     type="checkbox"
-                    className="mr-2 w-5 h-5 bg-gray-100 border-2 text-mint-green border-mint-green rounded-full focus:ring-0 hover:text-mint-green cursor-pointer transition-colors"
+                    className="mr-2 my-0.5 w-5 h-5 bg-gray-100 border-2 text-mint-green border-mint-green rounded-full focus:ring-0 hover:text-mint-green cursor-pointer transition-colors"
                     onChange={() => handleChange(item.id)}
                     checked={item.checked}
                   ></input>
-                  {item.text}
+                  <span>{item.text}</span>
                 </label>
               ))}
             </div>
